@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Reference Include="Leadtools.Pdf.dll">
+      <HintPath>$(MSBuildThisFileDirectory)..\..\lib\netstandard1.4\Leadtools.Pdf.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Reference Include="Leadtools.ImageProcessing.Kernel.dll">
+      <HintPath>$(MSBuildThisFileDirectory)..\..\lib\netstandard1.4\Leadtools.ImageProcessing.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Effects.dll">
+      <HintPath>$(MSBuildThisFileDirectory)..\..\lib\netstandard1.4\Leadtools.ImageProcessing.Effects.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Color.dll">
+      <HintPath>$(MSBuildThisFileDirectory)..\..\lib\netstandard1.4\Leadtools.ImageProcessing.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Core.dll">
+      <HintPath>$(MSBuildThisFileDirectory)..\..\lib\netstandard1.4\Leadtools.ImageProcessing.Core.dll</HintPath>
+    </Reference>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\arm64-v8a\libleadtools.imageprocessing.utilities.so">
+      <Abi>arm64-v8a</Abi>
+      <link>libs\arm64-v8a\libleadtools.imageprocessing.utilities.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\armeabi-v7a\libleadtools.imageprocessing.utilities.so">
+      <Abi>armeabi-v7a</Abi>
+      <link>libs\armeabi-v7a\libleadtools.imageprocessing.utilities.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\armeabi\libleadtools.imageprocessing.utilities.so">
+      <Abi>armeabi</Abi>
+      <link>libs\armeabi\libleadtools.imageprocessing.utilities.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\x86_64\libleadtools.imageprocessing.utilities.so">
+      <Abi>x86_64</Abi>
+      <link>libs\x86_64\libleadtools.imageprocessing.utilities.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\x86\libleadtools.imageprocessing.utilities.so">
+      <Abi>x86</Abi>
+      <link>libs\x86\libleadtools.imageprocessing.utilities.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\arm64-v8a\libleadtools.imageprocessing.kernel.so">
+      <Abi>arm64-v8a</Abi>
+      <link>libs\arm64-v8a\libleadtools.imageprocessing.kernel.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\armeabi-v7a\libleadtools.imageprocessing.kernel.so">
+      <Abi>armeabi-v7a</Abi>
+      <link>libs\armeabi-v7a\libleadtools.imageprocessing.kernel.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\armeabi\libleadtools.imageprocessing.kernel.so">
+      <Abi>armeabi</Abi>
+      <link>libs\armeabi\libleadtools.imageprocessing.kernel.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\x86_64\libleadtools.imageprocessing.kernel.so">
+      <Abi>x86_64</Abi>
+      <link>libs\x86_64\libleadtools.imageprocessing.kernel.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\x86\libleadtools.imageprocessing.kernel.so">
+      <Abi>x86</Abi>
+      <link>libs\x86\libleadtools.imageprocessing.kernel.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\arm64-v8a\libleadtools.imageprocessing.effects.so">
+      <Abi>arm64-v8a</Abi>
+      <link>libs\arm64-v8a\libleadtools.imageprocessing.effects.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\armeabi-v7a\libleadtools.imageprocessing.effects.so">
+      <Abi>armeabi-v7a</Abi>
+      <link>libs\armeabi-v7a\libleadtools.imageprocessing.effects.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\armeabi\libleadtools.imageprocessing.effects.so">
+      <Abi>armeabi</Abi>
+      <link>libs\armeabi\libleadtools.imageprocessing.effects.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\x86_64\libleadtools.imageprocessing.effects.so">
+      <Abi>x86_64</Abi>
+      <link>libs\x86_64\libleadtools.imageprocessing.effects.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\x86\libleadtools.imageprocessing.effects.so">
+      <Abi>x86</Abi>
+      <link>libs\x86\libleadtools.imageprocessing.effects.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\arm64-v8a\libleadtools.imageprocessing.color.so">
+      <Abi>arm64-v8a</Abi>
+      <link>libs\arm64-v8a\libleadtools.imageprocessing.color.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\armeabi-v7a\libleadtools.imageprocessing.color.so">
+      <Abi>armeabi-v7a</Abi>
+      <link>libs\armeabi-v7a\libleadtools.imageprocessing.color.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\armeabi\libleadtools.imageprocessing.color.so">
+      <Abi>armeabi</Abi>
+      <link>libs\armeabi\libleadtools.imageprocessing.color.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\x86_64\libleadtools.imageprocessing.color.so">
+      <Abi>x86_64</Abi>
+      <link>libs\x86_64\libleadtools.imageprocessing.color.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\x86\libleadtools.imageprocessing.color.so">
+      <Abi>x86</Abi>
+      <link>libs\x86\libleadtools.imageprocessing.color.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\arm64-v8a\libleadtools.imageprocessing.core.so">
+      <Abi>arm64-v8a</Abi>
+      <link>libs\arm64-v8a\libleadtools.imageprocessing.core.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\armeabi-v7a\libleadtools.imageprocessing.core.so">
+      <Abi>armeabi-v7a</Abi>
+      <link>libs\armeabi-v7a\libleadtools.imageprocessing.core.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\armeabi\libleadtools.imageprocessing.core.so">
+      <Abi>armeabi</Abi>
+      <link>libs\armeabi\libleadtools.imageprocessing.core.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\x86_64\libleadtools.imageprocessing.core.so">
+      <Abi>x86_64</Abi>
+      <link>libs\x86_64\libleadtools.imageprocessing.core.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="$(MSBuildThisFileDirectory)..\..\lib\MonoAndroid\x86\libleadtools.imageprocessing.core.so">
+      <Abi>x86</Abi>
+      <link>libs\x86\libleadtools.imageprocessing.core.so</link>
+      <buildAction>Content</buildAction>
+      <copyToOutput>true</copyToOutput>
+    </AndroidNativeLibrary>
+  </ItemGroup>
+</Project>

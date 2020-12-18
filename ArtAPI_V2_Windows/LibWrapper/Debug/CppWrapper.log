@@ -1,0 +1,10 @@
+﻿  pch.cpp
+  AssemblyInfo.cpp
+  LibWrapper.cpp
+c:\project\anyai4d\application\windows\winai4d_200315_k\cryptoblowfish\cryptoblowfish.h(77): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\project\anyai4d\application\windows\winai4d_200315_k\cryptoblowfish\cryptoblowfish.h(122): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\project\anyai4d\application\windows\winai4d_200315_k\cryptoblowfish\cryptoblowfish.h(140): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  코드를 생성하고 있습니다...
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+  AssemblyInfo.obj : MSIL 모듈이 발견되었습니다. MSIL에 증분 링크를 사용할 수 없습니다. 전체 링크를 수행하고 있습니다.
+  CppWrapper.vcxproj -> C:\Project\AnyAI4D\Application\Windows\WinAI4D_200315_K\Debug\LibWrapper.dll

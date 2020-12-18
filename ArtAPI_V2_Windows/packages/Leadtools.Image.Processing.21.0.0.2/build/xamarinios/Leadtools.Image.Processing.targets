@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <NativeReference Include="Native References/Leadtools.ImageProcessing.Utilities.framework">
+      <Kind>Framework</Kind>
+    </NativeReference>
+    <LeadtoolsFrameworkFiles_Leadtools_ImageProcessing_Utilities_framework Include="$(MSBuildThisFileDirectory)/Leadtools.ImageProcessing.Utilities.framework/*" />
+    <LeadtoolsFrameworkHeaderFiles_Leadtools_ImageProcessing_Utilities_framework Include="$(MSBuildThisFileDirectory)/Leadtools.ImageProcessing.Utilities.framework/Headers/*" />
+    <NativeReference Include="Native References/Leadtools.ImageProcessing.Kernel.framework">
+      <Kind>Framework</Kind>
+    </NativeReference>
+    <LeadtoolsFrameworkFiles_Leadtools_ImageProcessing_Kernel_framework Include="$(MSBuildThisFileDirectory)/Leadtools.ImageProcessing.Kernel.framework/*" />
+    <LeadtoolsFrameworkHeaderFiles_Leadtools_ImageProcessing_Kernel_framework Include="$(MSBuildThisFileDirectory)/Leadtools.ImageProcessing.Kernel.framework/Headers/*" />
+    <NativeReference Include="Native References/Leadtools.ImageProcessing.Effects.framework">
+      <Kind>Framework</Kind>
+    </NativeReference>
+    <LeadtoolsFrameworkFiles_Leadtools_ImageProcessing_Effects_framework Include="$(MSBuildThisFileDirectory)/Leadtools.ImageProcessing.Effects.framework/*" />
+    <LeadtoolsFrameworkHeaderFiles_Leadtools_ImageProcessing_Effects_framework Include="$(MSBuildThisFileDirectory)/Leadtools.ImageProcessing.Effects.framework/Headers/*" />
+    <NativeReference Include="Native References/Leadtools.ImageProcessing.Color.framework">
+      <Kind>Framework</Kind>
+    </NativeReference>
+    <LeadtoolsFrameworkFiles_Leadtools_ImageProcessing_Color_framework Include="$(MSBuildThisFileDirectory)/Leadtools.ImageProcessing.Color.framework/*" />
+    <LeadtoolsFrameworkHeaderFiles_Leadtools_ImageProcessing_Color_framework Include="$(MSBuildThisFileDirectory)/Leadtools.ImageProcessing.Color.framework/Headers/*" />
+    <NativeReference Include="Native References/Leadtools.ImageProcessing.Core.framework">
+      <Kind>Framework</Kind>
+    </NativeReference>
+    <LeadtoolsFrameworkFiles_Leadtools_ImageProcessing_Core_framework Include="$(MSBuildThisFileDirectory)/Leadtools.ImageProcessing.Core.framework/*" />
+    <LeadtoolsFrameworkHeaderFiles_Leadtools_ImageProcessing_Core_framework Include="$(MSBuildThisFileDirectory)/Leadtools.ImageProcessing.Core.framework/Headers/*" />
+  </ItemGroup>
+  <Target Name="CreateNativeReferencesDirectory_Leadtools_ImageProcessing_Utilities_framework" AfterTargets="BeforeBuild">
+    <MakeDir Directories="$(ProjectDir)/Native References/Leadtools.ImageProcessing.Utilities.framework/Headers" />
+  </Target>
+  <Target Name="CopyLeadtoolsNativeFrameworks_Leadtools_ImageProcessing_Utilities_framework" AfterTargets="CreateNativeReferencesDirectory_Leadtools_ImageProcessing_Utilities_framework">
+    <Copy SourceFiles="@(LeadtoolsFrameworkFiles_Leadtools_ImageProcessing_Utilities_framework)" DestinationFolder="$(ProjectDir)/Native References/Leadtools.ImageProcessing.Utilities.framework" />
+    <Copy SourceFiles="@(LeadtoolsFrameworkHeaderFiles_Leadtools_ImageProcessing_Utilities_framework)" DestinationFolder="$(ProjectDir)/Native References/Leadtools.ImageProcessing.Utilities.framework/Headers" />
+  </Target>
+  <Target Name="CreateNativeReferencesDirectory_Leadtools_ImageProcessing_Kernel_framework" AfterTargets="BeforeBuild">
+    <MakeDir Directories="$(ProjectDir)/Native References/Leadtools.ImageProcessing.Kernel.framework/Headers" />
+  </Target>
+  <Target Name="CopyLeadtoolsNativeFrameworks_Leadtools_ImageProcessing_Kernel_framework" AfterTargets="CreateNativeReferencesDirectory_Leadtools_ImageProcessing_Kernel_framework">
+    <Copy SourceFiles="@(LeadtoolsFrameworkFiles_Leadtools_ImageProcessing_Kernel_framework)" DestinationFolder="$(ProjectDir)/Native References/Leadtools.ImageProcessing.Kernel.framework" />
+    <Copy SourceFiles="@(LeadtoolsFrameworkHeaderFiles_Leadtools_ImageProcessing_Kernel_framework)" DestinationFolder="$(ProjectDir)/Native References/Leadtools.ImageProcessing.Kernel.framework/Headers" />
+  </Target>
+  <Target Name="CreateNativeReferencesDirectory_Leadtools_ImageProcessing_Effects_framework" AfterTargets="BeforeBuild">
+    <MakeDir Directories="$(ProjectDir)/Native References/Leadtools.ImageProcessing.Effects.framework/Headers" />
+  </Target>
+  <Target Name="CopyLeadtoolsNativeFrameworks_Leadtools_ImageProcessing_Effects_framework" AfterTargets="CreateNativeReferencesDirectory_Leadtools_ImageProcessing_Effects_framework">
+    <Copy SourceFiles="@(LeadtoolsFrameworkFiles_Leadtools_ImageProcessing_Effects_framework)" DestinationFolder="$(ProjectDir)/Native References/Leadtools.ImageProcessing.Effects.framework" />
+    <Copy SourceFiles="@(LeadtoolsFrameworkHeaderFiles_Leadtools_ImageProcessing_Effects_framework)" DestinationFolder="$(ProjectDir)/Native References/Leadtools.ImageProcessing.Effects.framework/Headers" />
+  </Target>
+  <Target Name="CreateNativeReferencesDirectory_Leadtools_ImageProcessing_Color_framework" AfterTargets="BeforeBuild">
+    <MakeDir Directories="$(ProjectDir)/Native References/Leadtools.ImageProcessing.Color.framework/Headers" />
+  </Target>
+  <Target Name="CopyLeadtoolsNativeFrameworks_Leadtools_ImageProcessing_Color_framework" AfterTargets="CreateNativeReferencesDirectory_Leadtools_ImageProcessing_Color_framework">
+    <Copy SourceFiles="@(LeadtoolsFrameworkFiles_Leadtools_ImageProcessing_Color_framework)" DestinationFolder="$(ProjectDir)/Native References/Leadtools.ImageProcessing.Color.framework" />
+    <Copy SourceFiles="@(LeadtoolsFrameworkHeaderFiles_Leadtools_ImageProcessing_Color_framework)" DestinationFolder="$(ProjectDir)/Native References/Leadtools.ImageProcessing.Color.framework/Headers" />
+  </Target>
+  <Target Name="CreateNativeReferencesDirectory_Leadtools_ImageProcessing_Core_framework" AfterTargets="BeforeBuild">
+    <MakeDir Directories="$(ProjectDir)/Native References/Leadtools.ImageProcessing.Core.framework/Headers" />
+  </Target>
+  <Target Name="CopyLeadtoolsNativeFrameworks_Leadtools_ImageProcessing_Core_framework" AfterTargets="CreateNativeReferencesDirectory_Leadtools_ImageProcessing_Core_framework">
+    <Copy SourceFiles="@(LeadtoolsFrameworkFiles_Leadtools_ImageProcessing_Core_framework)" DestinationFolder="$(ProjectDir)/Native References/Leadtools.ImageProcessing.Core.framework" />
+    <Copy SourceFiles="@(LeadtoolsFrameworkHeaderFiles_Leadtools_ImageProcessing_Core_framework)" DestinationFolder="$(ProjectDir)/Native References/Leadtools.ImageProcessing.Core.framework/Headers" />
+  </Target>
+</Project>

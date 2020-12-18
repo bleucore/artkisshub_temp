@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <NativeReference Include="Native References/Leadtools.Pdf.framework">
+      <Kind>Framework</Kind>
+    </NativeReference>
+    <LeadtoolsFrameworkFiles_Leadtools_Pdf_framework Include="$(MSBuildThisFileDirectory)/Leadtools.Pdf.framework/*" />
+    <LeadtoolsFrameworkHeaderFiles_Leadtools_Pdf_framework Include="$(MSBuildThisFileDirectory)/Leadtools.Pdf.framework/Headers/*" />
+  </ItemGroup>
+  <Target Name="CreateNativeReferencesDirectory_Leadtools_Pdf_framework" AfterTargets="BeforeBuild">
+    <MakeDir Directories="$(ProjectDir)/Native References/Leadtools.Pdf.framework/Headers" />
+  </Target>
+  <Target Name="CopyLeadtoolsNativeFrameworks_Leadtools_Pdf_framework" AfterTargets="CreateNativeReferencesDirectory_Leadtools_Pdf_framework">
+    <Copy SourceFiles="@(LeadtoolsFrameworkFiles_Leadtools_Pdf_framework)" DestinationFolder="$(ProjectDir)/Native References/Leadtools.Pdf.framework" />
+    <Copy SourceFiles="@(LeadtoolsFrameworkHeaderFiles_Leadtools_Pdf_framework)" DestinationFolder="$(ProjectDir)/Native References/Leadtools.Pdf.framework/Headers" />
+  </Target>
+</Project>
